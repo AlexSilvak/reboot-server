@@ -22,7 +22,7 @@ def restart_server():
         client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         
         # Conecta ao servidor
-        # systemctl restart openvpn-client@katuxa comando para reistartar vnpn
+        # systemctl restart openvpn-client comando para reistartar vnpn
         client.connect(hostname, port, username, password)
         
         # Comando para reiniciar o servidor
